@@ -13,15 +13,23 @@
             margin: 0;
             background-color: #f0f0f0;
         }
+
+        .outer-container {
+            background-color: #d0d0d0; /* Grau für den äußeren Container */
+            padding: 3px; /* Abstand von 3px vom Rand */
+            box-sizing: border-box;
+        }
+
         .container {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            width: calc(100% - 10px); /* Adjust width to account for the margin */
+            width: calc(100% - 6px); /* Adjust width to account for the outer container padding */
             max-width: 1200px;
-            margin: 5px; /* Add a margin of 5px around the container */
+            margin: 0; /* Remove margin as padding is used for spacing */
             justify-content: flex-start; /* Align items to the start */
         }
+
         .box {
             display: flex;
             justify-content: center;
@@ -37,20 +45,22 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Container mit nummerierten Boxen -->
-        <div class="box">1</div>
-        <div class="box">2</div>
-        <div class="box">3</div>
-        <div class="box">4</div>
-        <div class="box">5</div>
-        <div class="box">6</div>
-        <div class="box">7</div>
-        <div class="box">8</div>
-        <div class="box">9</div>
-        <div class="box">10</div>
-        <div class="box">11</div>
-        <div class="box">12</div>
+    <div class="outer-container">
+        <div class="container">
+            <!-- Container mit nummerierten Boxen -->
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box">10</div>
+            <div class="box">11</div>
+            <div class="box">12</div>
+        </div>
     </div>
 </body>
 </html>
