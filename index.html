@@ -4,12 +4,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>12 Container mit Flexbox</title>
     <style>
+        /* Reset margin/padding für den Body */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
         /* Flexbox Container */
         .container-wrapper {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             gap: 10px;
+            padding: 20px;
+            background-color: #f0f0f0;
         }
 
         /* Flexbox Item */
