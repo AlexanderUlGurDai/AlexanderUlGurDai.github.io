@@ -1,56 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Container Test</title>
+    <title>Rote Container</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            margin: 0;
             background-color: #f0f0f0;
         }
-
-        .container-wrapper {
+        .container {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            justify-content: flex-start; /* Align items to the start */
-            margin: 5px; /* Add a margin of 5px around the container-wrapper */
             width: calc(100% - 10px); /* Adjust width to account for the margin */
+            max-width: 1200px;
+            margin: 5px; /* Add a margin of 5px around the container */
+            justify-content: flex-start; /* Align items to the start */
         }
-
-        .container {
-            width: 100px;
-            height: 100px;
-            background-color: green;
-            color: white;
+        .box {
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 20px;
-            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div class="container-wrapper">
-        <div class="container">1.</div>
-        <div class="container">2.</div>
-        <div class="container">3.</div>
-        <div class="container">4.</div>
-        <div class="container">5.</div>
-        <div class="container">6.</div>
-        <div class="container">7.</div>
-        <div class="container">8.</div>
-        <div class="container">9.</div>
-        <div class="container">10.</div>
-        <div class="container">11.</div>
-        <div class="container">12.</div>
+    <div class="container">
+        <!-- Container mit nummerierten Boxen -->
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
     </div>
 </body>
 </html>
