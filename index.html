@@ -2,22 +2,52 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello!</title>
+    <title>12 Container mit Flexbox</title>
     <style>
-        /* Standardstil für PC */
-        body {
-            background-color: red;
+        /* Flexbox Container */
+        .container-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 10px;
         }
 
-        /* Stil für Handys (Bildschirme kleiner als 768px) */
-        @media (max-width: 768px) {
-            body {
-                background-color: yellow;
+        /* Flexbox Item */
+        .container {
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            border: 2px solid black;
+        }
+
+        /* Größere Container auf größeren Bildschirmen */
+        @media (min-width: 769px) {
+            .container {
+                width: 150px;
+                height: 150px;
+                font-size: 24px;
             }
         }
     </style>
 </head>
 <body>
-    Hello World!
+    <div class="container-wrapper">
+        <div class="container">1.</div>
+        <div class="container">2.</div>
+        <div class="container">3.</div>
+        <div class="container">4.</div>
+        <div class="container">5.</div>
+        <div class="container">6.</div>
+        <div class="container">7.</div>
+        <div class="container">8.</div>
+        <div class="container">9.</div>
+        <div class="container">10.</div>
+        <div class="container">11.</div>
+        <div class="container">12.</div>
+    </div>
 </body>
 </html>
